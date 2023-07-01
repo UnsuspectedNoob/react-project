@@ -15,6 +15,7 @@ import Root from './layouts/Root.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import ContactUs from './pages/ContactUs'
+import ErrorPage from './components/ErrorPage'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,8 @@ const router = createBrowserRouter(
       <Route index element={ <Home /> } />
       <Route path='about' element={ <About /> } />
       <Route path='contact us' element={ <ContactUs /> } />
+
+      <Route path='*' element={ <ErrorPage /> } />
     </Route>
   )
 );
