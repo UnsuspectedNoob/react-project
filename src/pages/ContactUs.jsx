@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Home() {
+function ContactUs() {
   return (
     <div className='min-h-screen grid place-items-center'>
-      <p className='text-8xl'>Home</p>
+      <p className='text-8xl'>Contact Us</p>
     </div>
   );
 }
 
-export default Home;
+export default ContactUs;
